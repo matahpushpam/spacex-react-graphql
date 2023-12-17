@@ -1,5 +1,6 @@
 import React from "react";
 import { useQuery, gql } from "@apollo/client";
+import { Spin } from "antd";
 
 const EXAMPLE_QUERY = gql`
 query Company {
@@ -16,7 +17,7 @@ query Company {
 const ExampleList = () => {
     const { loading, error, data } = useQuery(EXAMPLE_QUERY);
     
-    if(loading) return <p>Loading...</p>
+    if(loading) return <div><Spin/></div>
     if(error) return <p>Error</p>
 
     return (
