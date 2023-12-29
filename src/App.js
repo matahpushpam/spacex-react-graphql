@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import CoresList from './Cores/cores.list';
-import ExampleList from './Example/example.list';
+import CapsulesList from './Capsules/capsules.list';
 import { Layout, theme } from 'antd';
 import { Routes, Route } from 'react-router-dom'; 
 import AppHeader from './Layout/app.header';
@@ -35,7 +35,9 @@ function App() {
             >
               <Routes>
                 <Route exact path="/" element={<CoresList />}></Route>
-                <Route path="/example" element={<ExampleList />}></Route>
+                <Route path="/cores" element={<CoresList />}></Route>
+                <Route path="/capsules" element={<CapsulesList />}></Route>
+                {/* <Route path="/dragons" element={<ExampleList />}></Route> */}
               </Routes>
             </Content>
           </Layout>
