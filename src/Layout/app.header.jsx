@@ -3,7 +3,7 @@ import { Layout, Menu } from 'antd';
 import { useNavigate } from "react-router-dom";
 const { Header } = Layout;
 
-const items = ['cores', 'capsules', 'dragons'].map((key) => ({
+const items = ['cores', 'capsules', 'dragons', 'create-users'].map((key) => ({
   key,
   label: `${key.toUpperCase()}`,
 }));
