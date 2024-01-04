@@ -8,6 +8,7 @@ import AppHeader from './Layout/app.header';
 import AppSidebar from './Layout/app.sidebar';
 import AppFooter from './Layout/app.footer';
 import CreateUsers from './Users/users.create';
+import DragonsList from './Dragons/dragons.list';
 
 const { Content } = Layout;
 
@@ -40,7 +41,7 @@ function App() {
                 <Route path="/capsules" element={<CapsulesList />}></Route>
                 <Route path="/capsules" element={<CapsulesList />}></Route>
                 <Route path="/create-users" element={<CreateUsers />}></Route>
-                {/* <Route path="/dragons" element={<ExampleList />}></Route> */}
+                <Route path="/dragons" element={<DragonsList />}></Route>
               </Routes>
             </Content>
           </Layout>
